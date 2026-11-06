@@ -1,0 +1,15 @@
+Package: HeavyBall
+Type: Package
+Title: Algorithme de la Boule Pesante pour l'Optimisation en R
+Version: 1.0.0
+Authors@R: Noubong Tcheuo Harold David [aut,cre]
+Maintainer: Noubong Tcheuo Harold David <davidharold709@gmail.com>
+Description: Implémentation de la méthode d'optimisation de Polyak (Heavy Ball Method)
+                pour la minimisation de fonctions de coût dans le cadre d'un projet académique.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+Config/roxygen2/version: 8.1.1
+Depends: 
+    R (>= 3.5)

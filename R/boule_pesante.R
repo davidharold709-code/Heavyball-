@@ -1,12 +1,18 @@
-#' Algorithme de la Boule Pesante (Heavy Ball Method)
+#' Polyak's Heavy Ball Optimization Method
 #'
-#' @param x Vecteur de la variable explicative (normalisé)
-#' @param y Vecteur de la variable cible
-#' @param alpha Taux d'apprentissage (taille du pas)
-#' @param beta Coefficient de frottement / inertie (momentum)
-#' @param n_iter Nombre d'itérations
-#' @return Une liste contenant le paramètre optimal theta et l'historique des coûts
+#' Optimizes a smooth objective function using classical momentum (Heavy Ball)
+#' with fixed step size and momentum factor.
+#'
+#' @param x Numeric vector of scaled predictor values.
+#' @param y Numeric vector of target values.
+#' @param alpha Numeric learning rate (step size). Default is `0.08`.
+#' @param beta Numeric momentum factor (inertia). Default is `0.85`.
+#' @param n_iter Integer number of iterations. Default is `40`.
+#'
+#' @return A list containing the fitted parameter `theta` and the cost history
+#'   `historique` across iterations.
 #' @export
+
 boule_pesante <- function(x, y, alpha = 0.08, beta = 0.85, n_iter = 40) {
   N <- length(y)
   theta <- 0      # Initialisation du paramètre

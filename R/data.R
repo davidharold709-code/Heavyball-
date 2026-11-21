@@ -1,12 +1,12 @@
-#' Données d'une Centrale Thermique à Cycle Combiné (Génie Énergétique)
+#' Combined Cycle Power Plant Sensor Data
 #'
-#' Jeu de données issu de capteurs industriels d'une centrale thermique,
-#' utilisé pour modéliser la production d'électricité en fonction de l'environnement.
+#' Industrial sensor dataset from a combined cycle power plant used to model
+#' electrical power generation from environmental conditions.
 #'
-#' @format Un data frame avec plusieurs observations et 2 variables principales :
+#' @format A data frame with industrial observations and 2 main variables:
 #' \describe{
-#'   \item{temperature_AT}{Température ambiante mesurée en degrés Celsius (°C) - Entrée X}
-#'   \item{puissance_PE}{Puissance électrique nette générée en Mégawatts (MW) - Sortie Y}
+#'   \item{temperature_AT}{Ambient temperature in degrees Celsius (°C) - Predictor X.}
+#'   \item{puissance_PE}{Net electrical energy output in Megawatts (MW) - Target Y.}
 #' }
-#' @source \url{UCI Machine Learning Repository - Combined Cycle Power Plant}
+#' @source UCI Machine Learning Repository (Combined Cycle Power Plant Dataset).
 "power_plant_data"

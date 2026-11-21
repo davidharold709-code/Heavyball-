@@ -2,24 +2,26 @@
 % Please edit documentation in R/boule_pesante.R
 \name{boule_pesante}
 \alias{boule_pesante}
-\title{Algorithme de la Boule Pesante (Heavy Ball Method)}
+\title{Polyak's Heavy Ball Optimization Method}
 \usage{
 boule_pesante(x, y, alpha = 0.08, beta = 0.85, n_iter = 40)
 }
 \arguments{
-\item{x}{Vecteur de la variable explicative (normalisé)}
+\item{x}{Numeric vector of scaled predictor values.}
 
-\item{y}{Vecteur de la variable cible}
+\item{y}{Numeric vector of target values.}
 
-\item{alpha}{Taux d'apprentissage (taille du pas)}
+\item{alpha}{Numeric learning rate (step size). Default is \code{0.08}.}
 
-\item{beta}{Coefficient de frottement / inertie (momentum)}
+\item{beta}{Numeric momentum factor (inertia). Default is \code{0.85}.}
 
-\item{n_iter}{Nombre d'itérations}
+\item{n_iter}{Integer number of iterations. Default is \code{40}.}
 }
 \value{
-Une liste contenant le paramètre optimal theta et l'historique des coûts
+A list containing the fitted parameter \code{theta} and the cost history
+\code{historique} across iterations.
 }
 \description{
-Algorithme de la Boule Pesante (Heavy Ball Method)
+Optimizes a smooth objective function using classical momentum (Heavy Ball)
+with fixed step size and momentum factor.
 }

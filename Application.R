@@ -1,9 +1,5 @@
-# PROJET R : HeavyBall - Analyse de Sensibilité et Performance Algorithmique
-# Application : Combined Cycle Power Plant Dataset (Génie Énergétique)
-
-
-library(devtools)
-load_all(".") # Charge le package local HeavyBall
+#library(devtools)
+#load_all(".") # Charge le package local HeavyBall
 
 pkgs <- c("ggplot2", "dplyr", "gganimate", "gifski")
 for (p in pkgs) if (!require(p, character.only = TRUE)) install.packages(p)
